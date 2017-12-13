@@ -38,7 +38,8 @@
 
 **This is a formula that helps us to predict the stock price T (St) by using today's price (S0). Let's suppose
    A stock's price is 80 today, and what's the stock price of A after 2 years? Let's use a simple python 
-   program to solve this questions:**
+
+program to solve this questions:**
 
 ```python
 %matplotlib inline
@@ -59,12 +60,26 @@ plt.ylabel('frequency')
 [Ait text] (https://www.dropbox.com/s/qnai6lxzytvydku/Screenshot%202017-11-27%2019.57.56.png?dl=0)
 
 **As we can see , the stock price of A satisfies the lognormal distribution.  Therefore, by using simple 
-computing skills , we can easily get the final distributions of the stock price and which helps us analyze stock more efficiently.  However, even though the computing powers of computers is growing rapidly every 
+computing skills , we can easily get the final distributions of the stock price and which helps us analyze stock more efficiently.  In addition, the applications of computer technology and algorithms in financial fields goes far beyond this. For example, the "betterment" company, the online investing company that is based on the algorithms. Users will enter their goals (for example, a $ 250,000 deposit when they retire at age 65), age, income, and current financial assets. the computer based on all the programme they wrote will search and match across assets and financial instruments based on user-entered goals. The entire system will make adjustment based on the changes in user goals and changes in real time markets. However, even though the computing powers of computers is growing rapidly every 
 year , we should not forget that  the amount of information that we need to process has been growing 
 exponentially. Everyone creates a lot of data every day. In the field of financial research, with the 
 improvement of research methods, the amount data has reached an unexpected level.  In today's internet 
 age, more and more economic problems need to be solved by better algorithms.**  
 
+**In general, the time consumptions of the pragramme can be divided in two ways:**
+ 
+ **1. Frequently call the functions / methods:**
+
+**For example, in a 3D game, video rendering for each frame needs to be calculated for each pixel of the screen. In a 1366 * 768, 24-frame video game, this calculation requires 25.17 million executions per second. If this calculation is not algorithm optimization, a bit of computing waste will accumulate, eventually affecting the performance of the entire game**
+
+**2. Bad algorithms accumulated in various parts of the program. for eample:**
+    
+```C++
+for (int i = 0; i <dimension (a); i ++) 
+{...}
+```
+
+**In this program, dimension (a) needs to be repeated on each iteration. The corresponding optimization is to calculate size (a) before the for loop, and save it in a variable. This simple optimization saves time that seems minimal, but that optimization makes sense when the volume of data is huge.**
 
 **Here is another example.  Let's assume you want to use your computer to find a nearby bank to deposit money. How the search engine to deal with your request? There are 2 different algorithms to solve this. The easiest way is to find out all the banks in the city, calculate the distance between you and them, sort all the results and return the smallest one. This may be the most intuitive, but definitely not the fastest. If a city has only a small number of banks, then this should be no problem, anyway, the calculation is not large. But if there are many banks in a city and many more require similar searches, the server is under much pressure. In this case, how do we optimize the algorithm? First, we can do a "pretreatment" of the banks in the city. For example, a city is divided into a number of "grid", and then placed him in a grid according to the user's location, sort the distance of banks only inside this grid.  The second algorithm is obviously the better one.  Therefore, better algorithms can help us process information quickly  and save us a lot of time. Especially in the financial and economic field,  the faster information transmission speed, the higher chance you will win .**
 
