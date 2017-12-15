@@ -1,4 +1,7 @@
+
 # -*- coding: utf-8 -*-
+# Author: Nan Guo( A01755223)
+# Author : Mingyu Niu( A02023845)
 from AsianOption.data import MarketData
 from AsianOption.payoff import VanillaPayoff, call_payoff
 from AsianOption.engine import MonteCarloEngine, ArithmeticPricer, GeometricPricer
