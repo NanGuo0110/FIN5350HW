@@ -27,7 +27,7 @@ mcengine = MonteCarloEngine(replications, time_steps, pricer)
 ## Calculate the price
 option1 = OptionFacade(thecall, mcengine, thedata)
 price1 = option1.price()
-print("The call price  is", price1)
+print("The Asian Arithmetic European call price  is", price1)
 
 
 
