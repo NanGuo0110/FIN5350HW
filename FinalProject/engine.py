@@ -1,3 +1,10 @@
+
+# Author: Nan Guo (A01755223)
+# Author: Mingyu Niu(A02023845)
+
+
+
+
 import abc
 import enum
 import numpy as np
